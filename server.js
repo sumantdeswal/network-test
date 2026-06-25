@@ -14,7 +14,7 @@ app.post("/collect", async (req, res) => {
 
     try {
 
-        const response = await axios.get("https://ipwho.is/");
+        const response = await axios.get(`https://ipwho.is/${ip}`);
 
         res.json({
             success: true,
